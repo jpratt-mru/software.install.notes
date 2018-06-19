@@ -1,11 +1,15 @@
-# ZoomIt
+# JustColorPicker
 
 ## Version history
 
 | semester | version |
 | ---      | ---     |
-| Fall 2013 | 4.5 |
-| Fall 2012 | 4.2 |
+| Fall 2018 | 5.1 |
+| Fall 2016 | 4.6 |
+| Fall 2015 | 4.3 |
+| Fall 2014 | 3.5 |
+| Fall 2013 | 3.2 |
+| Fall 2012 | 2.6 |
 
 ## Type of installation
 
@@ -13,25 +17,25 @@ Choco zip
 
 ## What changes will a user notice after the install?
 
-- A ZoomIt shortcut is added to the Start Menu.
+- A JustColorPicker shortcut is added to the Start Menu.
 
 ## Who uses it?
 
-Anybody, really. Useful mostly for instructors who want to zoom in on code or the like.
+Web-developer types.
 
 ## What changes from a default installation are made?
 
-- [**default**] The app does a license pester every time it's run unless you agree to the license.
-  - [**to change manually**] Run program and accept agreement.
-  - [**to change on install**] See `chocolateyinstall.ps1`
-- [**default**] By default, the zoom key combo is Ctrl+1, which unfortunately clashes with Eclipse's auto-correct combo. Since Eclipse is much more frequently used, ZoomIt loses, and needs to be mapped to Ctrl+F1. (In order to keep the other ZoomIt key combos consistent, they could be mapped to function keys as well - I haven't done this though.)
-  - [**to change manually**] Run program change the combo in the appropriate tab.
+- [**default**] When you start up the app, you get a language prompt.
+  - [**to change manually**] Run the app with a /ini flag. When the app starts up, it'll create the ini file for you in the same location as the exe. Choose English as the language and on exit, the ini file will be properly tweaked.
+  - [**to change on install**] Put a jcpicker.ini file with the necessary language settings into the same directory as the exe when you make your 7z file - choco will handle the rest.
+- [**default**] When you close the app, you get a confirmation dialog.
+  - [**to change manually**] Do the same steps as above to tweak the ini - but you also need to add a registry hack.
   - [**to change on install**] See `chocolateyinstall.ps1`
 
 
 ## Surprises & annoyances
 
-- None
+- The fact that the ini file thing doesn't handle the close nag is a tad annoying; the registry entry was hard to do because it involved curly braces and Powershell and curly braces have a "special" relationship. (Noted in `chocolateyinstall.ps1`.)
 
 ## If updating this software, is there anything I should know?
 
@@ -39,5 +43,4 @@ Anybody, really. Useful mostly for instructors who want to zoom in on code or th
 
 ## Misc
 
-- If you want to have the program start on system start, you need to add `"C:\ProgramData\chocolatey\lib\zoomit\tools\ZoomIt.exe"` (those quotes are important, compadre) to `HKCU:\Software\Microsoft\Windows\CurrentVersion\Run`
- 
+- None
