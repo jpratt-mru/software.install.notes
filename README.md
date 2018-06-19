@@ -10,3 +10,7 @@ These installs have been created primarily for MACO labs and MACO instructors (b
 1. Provide an uninstaller that does a good effort at cleaning up everything that the installer changed, but for super-complicated apps (like Visual Studio or MiKTeX) that have tendrils everywhere, don't worry about it.
 1. Given that the primary use for these apps is in labs and SmartCabinets - things that are meant to be wiped clean and greenfielded on a regular (semester or at least academic year) basis, don't sweat creating updates - uninstall followed by a new install is the way to go.
 1. A reasonable effort should be made to test each application to make sure the install has worked successfully. To this end, a series of reasonable test steps should be made for each app, and these steps documented in the corresponding installer notes.
+
+## What else?
+
+- if you want to find the website and/or license for a given app, look in the corresponding nuspec file - it's all there
