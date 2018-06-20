@@ -36,3 +36,13 @@ Well...not too many people. It's a nice-to-have for classes (or individuals) nee
 ## Misc
 
 - None
+
+## Testing
+
+### Testing files
+
+- None needed
+
+### Testing method
+
+1. Start the program and make sure the Pageant icon appears in the System Tray.
