@@ -40,4 +40,13 @@ Anybody, really. Useful mostly for instructors who want to zoom in on code or th
 ## Misc
 
 - If you want to have the program start on system start, you need to add `"C:\ProgramData\chocolatey\lib\zoomit\tools\ZoomIt.exe"` (those quotes are important, compadre) to `HKCU:\Software\Microsoft\Windows\CurrentVersion\Run`
- 
+
+## Testing
+
+### Testing files
+
+- None needed
+
+### Testing method
+
+1. Press Ctrl+F1 to confirm zoom works. (Esc to exit.)
