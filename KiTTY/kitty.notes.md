@@ -52,3 +52,15 @@ Anyone who wishes to connect to INS.
 - By plonking pscp.exe in the install directory, users can perform easy scp file transfers by either right-clicking on the title bar or pressing ctrl+F3.
 - Upgrades to INS will probably cause a need to update the file in the SshHostKeys directory in the install directory.
 - You can play with the Sessions\ins and kitty.ini files directly if you want to play around hard-core with settings.
+
+## Testing
+
+### Testing files
+
+- Just have a file (pretty well any file) handy for dragging and dropping.
+
+### Testing method
+
+1. Make sure you can sign in without a key fingerprint warning.
+1. Make sure you can drag and drop a file into the window to successfully scp a file to your home directory.
+1. Compile a file with errors from within emacs and confirm backticks are showing in error messages.
