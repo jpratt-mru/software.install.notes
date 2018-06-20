@@ -42,6 +42,11 @@ Everybody! Who doesn't like compression?
 
 ## Testing
 
+### Testing files
+
+- `test.zip`
+- `test.rar`
+
 ### Testing method
 
 1. Confirm that the zip file has the usual Windows icon for zip files.
