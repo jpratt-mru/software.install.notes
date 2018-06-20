@@ -44,3 +44,14 @@ Web-developer types.
 ## Misc
 
 - None
+
+## Testing
+
+### Testing files
+
+- None needed
+
+### Testing method
+
+1. Start the program and make sure that a language prompt does not occur.
+1. Close the program and make sure no confirmation dialog appears.
